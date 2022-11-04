@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SifreKasasi.Login.Models.Site>
+
+@{
+    ViewData["Tit:active"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .myactionLink:hover{color:sienna;}
+    .myactionLink {color:seagreen;}
+</style>
+<h1 style="color:sienna">Şifre Kasası</h1>
+
+<p>
+    <a asp-action="Create"> + Yeni Şifre Kaydı</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.SId)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.SiteAdi)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.SId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteAdi)
+            </td>
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.SId },new{@class="myactionLink"}) |
+                @Html.ActionLink("Details", "Details", new { id=item.SId },new{@class="myactionLink"}) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.SId },new{@class="myactionLink"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,34 @@
+﻿@model SifreKasasi.Login.Models.Site
+
+<h4 style="color:sienna">Şifre Düzenleme</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="SId" class="control-label"></label>
+                <input asp-for="SId" class="form-control" />
+                <span asp-validation-for="SId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SiteAdi" class="control-label"></label>
+                <input asp-for="SiteAdi" class="form-control" />
+                <span asp-validation-for="SiteAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SPassword" class="control-label"></label>
+                <input asp-for="SPassword" class="form-control" />
+                <span asp-validation-for="SPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

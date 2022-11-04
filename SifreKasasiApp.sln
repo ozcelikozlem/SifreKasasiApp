@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SifreKasasi.API", "SifreKasasi.API\SifreKasasi.API.csproj", "{37E275D6-C8F9-4567-8604-EE3B0F9D74AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SifreKasasi.Login", "SifreKasasi.Login\SifreKasasi.Login.csproj", "{EBF78F0B-71D7-4E5A-9577-FF7330CCF6AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E275D6-C8F9-4567-8604-EE3B0F9D74AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E275D6-C8F9-4567-8604-EE3B0F9D74AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E275D6-C8F9-4567-8604-EE3B0F9D74AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E275D6-C8F9-4567-8604-EE3B0F9D74AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF78F0B-71D7-4E5A-9577-FF7330CCF6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF78F0B-71D7-4E5A-9577-FF7330CCF6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF78F0B-71D7-4E5A-9577-FF7330CCF6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF78F0B-71D7-4E5A-9577-FF7330CCF6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F6DB477-9C43-4C64-BBAF-6B639E166C67}
+	EndGlobalSection
+EndGlobal

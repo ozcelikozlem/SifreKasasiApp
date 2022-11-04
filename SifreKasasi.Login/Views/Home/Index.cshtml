@@ -1,0 +1,36 @@
+﻿@model SifreKasasi.Login.Models.Kayit
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<hr style="color:forestgreen" />
+<h1 style="color:darkgreen">Login</h1>
+<hr style="color:forestgreen"/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="LoginUser" asp-controller="Home">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KullaniciAdi" class="control-label">Kullanıcı Adı :</label>
+                <input asp-for="KullaniciAdi" class="form-control" />
+                <span asp-validation-for="KullaniciAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password :</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-outline-success"/>
+                <br />
+                <br />
+                <h6 style="color:forestgreen"> Yeni Üyelik Oluştur  <a asp-area="" asp-controller="Home" asp-action="Create">Kayıt Ol</a> </h6> 
+              
+            </div>
+            <label>@Html.Raw(@ViewBag.Message)</label>
+        </form>
+    </div>
+    <div>
+    
+</div>
+</div>
